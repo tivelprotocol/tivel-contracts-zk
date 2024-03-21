@@ -1,0 +1,62 @@
+{
+  "name": "tivel-contracts-zk",
+  "description": "Smart contracts of Tivel Finance on zkSync",
+  "version": "1.0.0",
+  "homepage": "https://tivel.finance",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tivelprotocol/tivel-contracts-zk"
+  },
+  "keywords": [
+    "tivel",
+    "zksync",
+    "ethereum"
+  ],
+  "license": "AGPL-3.0-or-later",
+  "devDependencies": {
+    "@matterlabs/hardhat-zksync-chai-matchers": "^0.1.0",
+    "@matterlabs/hardhat-zksync-deploy": "^0.6.2",
+    "@matterlabs/hardhat-zksync-toolbox": "^0.1.0",
+    "@matterlabs/hardhat-zksync-verify": "^0.1.2",
+    "@matterlabs/hardhat-zksync-vyper": "^0.1.7",
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
+    "@nomiclabs/hardhat-ethers": "^2.2.2",
+    "@nomiclabs/hardhat-etherscan": "^3.1.6",
+    "@nomiclabs/hardhat-solhint": "^2.0.1",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@types/chai": "^4.3.1",
+    "@types/mocha": "^9.1.1",
+    "chai": "^4.3.6",
+    "ethereum-waffle": "^3.4.4",
+    "ethereumjs-util": "^7.1.4",
+    "ethers": "^5.6.1",
+    "hardhat": "^2.12.7",
+    "hardhat-gas-reporter": "^1.0.9",
+    "mocha": "^10.0.0",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.2",
+    "zksync-web3": "^0.14.3"
+  },
+  "scripts": {
+    "build": "yarn hardhat compile",
+    "build-zk": "yarn hardhat compile --network zkSyncTestnet",
+    "mainnet:deploy": "yarn hardhat deploy-zksync --script mainnet/deploy.ts --network zkSyncMainnet",
+    "mainnet:manage-factory": "yarn hardhat deploy-zksync --script mainnet/manage-factory.ts --network zkSyncMainnet",
+    "mainnet:manage-withdrawal-monitor": "yarn hardhat deploy-zksync --script mainnet/manage-withdrawal-monitor.ts --network zkSyncMainnet",
+    "mainnet:manage-monitor": "yarn hardhat deploy-zksync --script mainnet/manage-monitor.ts --network zkSyncMainnet",
+    "mainnet:manage-pricefeed": "yarn hardhat deploy-zksync --script mainnet/manage-pricefeed.ts --network zkSyncMainnet",
+    "mainnet:manage-aggregator": "yarn hardhat deploy-zksync --script mainnet/manage-aggregator.ts --network zkSyncMainnet",
+    "mainnet:manage-user-storage": "yarn hardhat deploy-zksync --script mainnet/manage-user-storage.ts --network zkSyncMainnet",
+    "compile": "yarn hardhat compile",
+    "test": "yarn hardhat test"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.6.1",
+    "@matterlabs/hardhat-zksync-solc": "^1.1.4",
+    "@openzeppelin/contracts": "^4.9.3",
+    "@openzeppelin/contracts-upgradeable": "^4.9.3",
+    "@uniswap/v3-periphery": "^1.4.4",
+    "dotenv": "^16.0.3",
+    "hardhat-deploy": "^0.11.25"
+  }
+}

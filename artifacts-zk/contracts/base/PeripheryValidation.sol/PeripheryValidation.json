@@ -1,0 +1,17 @@
+{
+  "_format": "hh-zksolc-artifact-1",
+  "contractName": "PeripheryValidation",
+  "sourceName": "contracts/base/PeripheryValidation.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "TransactionTooOld",
+      "type": "error"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {},
+  "factoryDeps": {}
+}

@@ -1,0 +1,9 @@
+node_modules
+deprecated
+merged
+deploy
+deploy-utils
+test
+typechain-types
+.DS_Store
+.env
