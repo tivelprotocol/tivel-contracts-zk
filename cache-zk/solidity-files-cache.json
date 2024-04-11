@@ -1113,8 +1113,8 @@
       ]
     },
     "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/external/ISyncswapPool.sol": {
-      "lastModificationDate": 1710815755609,
-      "contentHash": "45ef16304de799d2e7361e5c508311f3",
+      "lastModificationDate": 1712824933336,
+      "contentHash": "b0031b0c2cad1804df0bb79e3f539b97",
       "sourceName": "contracts/interfaces/external/ISyncswapPool.sol",
       "solcConfig": {
         "version": "0.8.15",
@@ -1162,8 +1162,8 @@
       ]
     },
     "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/integrations/SyncswapStableDEXIntegration.sol": {
-      "lastModificationDate": 1710815755661,
-      "contentHash": "6e82652bc199f222ac953aff31d7cf34",
+      "lastModificationDate": 1712826367826,
+      "contentHash": "7d533d829839f2fff7aa1b9c9245bc52",
       "sourceName": "contracts/integrations/SyncswapStableDEXIntegration.sol",
       "solcConfig": {
         "version": "0.8.15",
@@ -1208,6 +1208,7 @@
         "../interfaces/IDEXIntegration.sol",
         "../interfaces/external/ISyncswapFactory.sol",
         "../interfaces/external/ISyncswapPool.sol",
+        "../interfaces/external/ISyncswapVault.sol",
         "../base/Lockable.sol"
       ],
       "versionPragmas": [
@@ -1429,8 +1430,8 @@
       ]
     },
     "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/integrations/SyncswapClassicDEXIntegration.sol": {
-      "lastModificationDate": 1710815755661,
-      "contentHash": "c7c4c07cf04e58e97d8be4afdcd143a5",
+      "lastModificationDate": 1712826339566,
+      "contentHash": "a5b143cfd81d67a143962c8d98abc7fa",
       "sourceName": "contracts/integrations/SyncswapClassicDEXIntegration.sol",
       "solcConfig": {
         "version": "0.8.15",
@@ -1475,6 +1476,7 @@
         "../interfaces/IDEXIntegration.sol",
         "../interfaces/external/ISyncswapFactory.sol",
         "../interfaces/external/ISyncswapPool.sol",
+        "../interfaces/external/ISyncswapVault.sol",
         "../base/Lockable.sol"
       ],
       "versionPragmas": [
@@ -5692,6 +5694,55 @@
       ],
       "artifacts": [
         "WETH"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/external/ISyncswapVault.sol": {
+      "lastModificationDate": 1712826240000,
+      "contentHash": "2e4d7622e889888673975209ea037b34",
+      "sourceName": "contracts/interfaces/external/ISyncswapVault.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.0",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.0",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "ISyncswapVault"
       ]
     }
   }
