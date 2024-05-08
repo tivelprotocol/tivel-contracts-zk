@@ -19,8 +19,8 @@
     "@matterlabs/hardhat-zksync-toolbox": "^0.1.0",
     "@matterlabs/hardhat-zksync-verify": "^0.1.2",
     "@matterlabs/hardhat-zksync-vyper": "^0.1.7",
-    "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
-    "@nomiclabs/hardhat-ethers": "^2.2.2",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.6",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
     "@nomiclabs/hardhat-etherscan": "^3.1.6",
     "@nomiclabs/hardhat-solhint": "^2.0.1",
     "@nomiclabs/hardhat-waffle": "^2.0.3",
@@ -47,6 +47,7 @@
     "mainnet:manage-pricefeed": "yarn hardhat deploy-zksync --script mainnet/manage-pricefeed.ts --network zkSyncMainnet",
     "mainnet:manage-aggregator": "yarn hardhat deploy-zksync --script mainnet/manage-aggregator.ts --network zkSyncMainnet",
     "mainnet:manage-user-storage": "yarn hardhat deploy-zksync --script mainnet/manage-user-storage.ts --network zkSyncMainnet",
+    "mainnet:test": "yarn hardhat deploy-zksync --script mainnet/test.ts --network zkSyncMainnet",
     "compile": "yarn hardhat compile",
     "test": "yarn hardhat test"
   },
@@ -57,6 +58,7 @@
     "@openzeppelin/contracts-upgradeable": "^4.9.3",
     "@uniswap/v3-periphery": "^1.4.4",
     "dotenv": "^16.0.3",
+    "ethers-decode-error": "^1.0.0",
     "hardhat-deploy": "^0.11.25"
   }
 }

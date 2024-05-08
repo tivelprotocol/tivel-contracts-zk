@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 pragma solidity >=0.8.4;
 
+import "./libraries/PoolAddress.sol";
 import "./interfaces/IERC20.sol";
 import "./interfaces/IFactory.sol";
 import "./interfaces/IPositionStorage.sol";
@@ -9,6 +10,7 @@ import "./interfaces/IUserStorage.sol";
 
 contract PositionStorage is IPositionStorage {
     address public override factory;
+    address public poolDeployer;
 
     TradePosition[] public positions;
     bytes32[] public openingPositionKeys;
@@ -27,6 +29,7 @@ contract PositionStorage is IPositionStorage {
     error Step1NotDone(bytes32 positionKey);
     error NotAllowed(address user);
     error InvalidParameter();
+    error BadStoplossPrice(uint256 currentPrice, uint256 stoplossPrice);
 
     event OpenTradePosition(bytes32 indexed positionKey);
     event CloseTradePosition(bytes32 indexed positionKey, address updater);
@@ -52,6 +55,7 @@ contract PositionStorage is IPositionStorage {
     function setFactory(address _factory) external {
         if (factory != address(0)) revert InitializedAlready();
         factory = _factory;
+        poolDeployer = IFactory(_factory).poolDeployer();
     }
 
     function position(
@@ -234,6 +238,7 @@ contract PositionStorage is IPositionStorage {
                     _params.baseToken,
                     _params.quoteToken
                 );
+                if (_params.stoplossPrice >= basePrice) return pos;
                 baseValue = (_params.baseAmount * basePrice) / pricePrecision;
                 uint256 collateralPrice = priceFeed.getLowestPrice(
                     _params.collateral,
@@ -311,7 +316,10 @@ contract PositionStorage is IPositionStorage {
                 pos.protocolFee = (fee * protocolFeeRate) / 10000;
             }
 
-            pos.pool = _factory.poolByQuoteToken(_params.quoteToken); // a position will be invalid if pool address == address(0)
+            pos.pool = PoolAddress.computeAddress(
+                poolDeployer,
+                _params.quoteToken
+            ); // a position will be invalid if pool address == address(0)
         }
     }
 
@@ -362,7 +370,7 @@ contract PositionStorage is IPositionStorage {
 
             IFactory _factory = IFactory(factory);
             IUserStorage userStorage = IUserStorage(_factory.userStorage());
-            if (_params.deadline <= pos.deadline) {
+            if (_params.deadline >= pos.deadline) {
                 uint256 interest = _factory.interest(pos.quoteToken.id);
                 fee =
                     (pos.quoteToken.amount *
@@ -420,9 +428,10 @@ contract PositionStorage is IPositionStorage {
     function openTradePosition(
         TradePosition memory _pos
     ) external override returns (bytes32 positionKey) {
-        IFactory _factory = IFactory(factory);
-        if (msg.sender != _factory.poolByQuoteToken(_pos.quoteToken.id))
-            revert Forbidden(msg.sender);
+        if (
+            msg.sender !=
+            PoolAddress.computeAddress(poolDeployer, _pos.quoteToken.id)
+        ) revert Forbidden(msg.sender);
 
         positionKey = keccak256(
             abi.encodePacked(this, positions.length, block.timestamp)
@@ -437,6 +446,15 @@ contract PositionStorage is IPositionStorage {
         emit OpenTradePosition(_pos.positionKey);
     }
 
+    function _popOpeningPosition(bytes32 _positionKey) internal {
+        uint256 lgth = openingPositionKeys.length;
+        uint256 idx = openingPositionIndex[_positionKey];
+        openingPositionIndex[_positionKey] = 0;
+        openingPositionIndex[openingPositionKeys[lgth - 1]] = idx;
+        openingPositionKeys[idx - 1] = openingPositionKeys[lgth - 1];
+        openingPositionKeys.pop();
+    }
+
     function updateStatus(
         bytes32 _positionKey,
         address _updater
@@ -446,9 +464,10 @@ contract PositionStorage is IPositionStorage {
 
         TradePosition storage pos = positions[idx - 1];
 
-        IFactory _factory = IFactory(factory);
-        if (msg.sender != _factory.poolByQuoteToken(pos.quoteToken.id))
-            revert Forbidden(msg.sender);
+        if (
+            msg.sender !=
+            PoolAddress.computeAddress(poolDeployer, pos.quoteToken.id)
+        ) revert Forbidden(msg.sender);
 
         if (pos.status.isClosed)
             revert TradePositionClosedAlready(_positionKey);
@@ -457,6 +476,7 @@ contract PositionStorage is IPositionStorage {
             pos.status.isExpired = true;
             needLiquidate = true;
         }
+        IFactory _factory = IFactory(factory);
         IPriceFeed priceFeed = IPriceFeed(_factory.priceFeed());
         uint256 collateralPrice = priceFeed.getLowestPrice(
             pos.collateral.id,
@@ -485,10 +505,7 @@ contract PositionStorage is IPositionStorage {
         pos.closer = _updater;
 
         // remove position from opening list
-        uint256 lgth = openingPositionKeys.length;
-        idx = openingPositionIndex[pos.positionKey];
-        openingPositionKeys[idx - 1] = openingPositionKeys[lgth - 1];
-        openingPositionKeys.pop();
+        _popOpeningPosition(pos.positionKey);
 
         emit CloseTradePosition(_positionKey, _updater);
     }
@@ -520,9 +537,10 @@ contract PositionStorage is IPositionStorage {
 
         TradePosition storage pos = positions[idx - 1];
 
-        IFactory _factory = IFactory(factory);
-        if (msg.sender != _factory.poolByQuoteToken(pos.quoteToken.id))
-            revert Forbidden(msg.sender);
+        if (
+            msg.sender !=
+            PoolAddress.computeAddress(poolDeployer, pos.quoteToken.id)
+        ) revert Forbidden(msg.sender);
 
         if (pos.status.isClosed)
             revert TradePositionClosedAlready(_positionKey);
@@ -533,12 +551,7 @@ contract PositionStorage is IPositionStorage {
         pos.closer = _updater;
 
         // remove position from opening list
-        uint256 lgth = openingPositionKeys.length;
-        idx = openingPositionIndex[pos.positionKey];
-        openingPositionKeys[idx - 1] = openingPositionKeys[lgth - 1];
-        openingPositionKeys.pop();
-
-
+        _popOpeningPosition(pos.positionKey);
 
         emit CloseTradePosition(_positionKey, _updater);
     }
@@ -549,12 +562,15 @@ contract PositionStorage is IPositionStorage {
 
         TradePosition storage pos = positions[idx - 1];
 
-        IFactory _factory = IFactory(factory);
-        if (msg.sender != _factory.poolByQuoteToken(pos.quoteToken.id))
-            revert Forbidden(msg.sender);
+        if (
+            msg.sender !=
+            PoolAddress.computeAddress(poolDeployer, pos.quoteToken.id)
+        ) revert Forbidden(msg.sender);
 
         if (pos.status.isClosed)
             revert TradePositionClosedAlready(_positionKey);
+
+        IFactory _factory = IFactory(factory);
         if (
             block.timestamp <
             pos.liquidationMarkTime + _factory.manualExpiration()
@@ -571,9 +587,10 @@ contract PositionStorage is IPositionStorage {
 
         TradePosition storage pos = positions[idx - 1];
 
-        IFactory _factory = IFactory(factory);
-        if (msg.sender != _factory.poolByQuoteToken(pos.quoteToken.id))
-            revert Forbidden(msg.sender);
+        if (
+            msg.sender !=
+            PoolAddress.computeAddress(poolDeployer, pos.quoteToken.id)
+        ) revert Forbidden(msg.sender);
 
         if (pos.status.isClosed)
             revert TradePositionClosedAlready(_positionKey);
@@ -585,10 +602,7 @@ contract PositionStorage is IPositionStorage {
         pos.status.isClosedManuallyStep2 = true;
 
         // remove position from opening list
-        uint256 lgth = openingPositionKeys.length;
-        idx = openingPositionIndex[pos.positionKey];
-        openingPositionKeys[idx - 1] = openingPositionKeys[lgth - 1];
-        openingPositionKeys.pop();
+        _popOpeningPosition(pos.positionKey);
 
         emit CloseTradePosition(_positionKey, address(0));
     }
@@ -604,11 +618,13 @@ contract PositionStorage is IPositionStorage {
 
         TradePosition storage pos = positions[idx - 1];
 
-        IFactory _factory = IFactory(factory);
-        if (msg.sender != _factory.poolByQuoteToken(pos.quoteToken.id))
-            revert Forbidden(msg.sender);
+        if (
+            msg.sender !=
+            PoolAddress.computeAddress(poolDeployer, pos.quoteToken.id)
+        ) revert Forbidden(msg.sender);
 
         if (!pos.status.isClosed) revert TradePositionNotClosed(_positionKey);
+        IFactory _factory = IFactory(factory);
         IPriceFeed priceFeed = IPriceFeed(_factory.priceFeed());
         uint256 pricePrecision = priceFeed.PRECISION();
 
@@ -633,15 +649,25 @@ contract PositionStorage is IPositionStorage {
 
         TradePosition storage pos = positions[idx - 1];
 
-        IFactory _factory = IFactory(factory);
-        if (msg.sender != _factory.poolByQuoteToken(pos.quoteToken.id))
-            revert Forbidden(msg.sender);
+        if (
+            msg.sender !=
+            PoolAddress.computeAddress(poolDeployer, pos.quoteToken.id)
+        ) revert Forbidden(msg.sender);
 
         if (pos.status.isClosed)
             revert TradePositionClosedAlready(_params.positionKey);
 
         if (_params.updater != pos.owner)
             revert NotOwner(pos.owner, _params.updater);
+
+        IFactory _factory = IFactory(factory);
+        IPriceFeed priceFeed = IPriceFeed(_factory.priceFeed());
+        uint256 basePrice = priceFeed.getLowestPrice(
+            pos.baseToken.id,
+            pos.quoteToken.id
+        );
+        if (_params.stoplossPrice >= basePrice)
+            revert BadStoplossPrice(basePrice, _params.stoplossPrice);
         pos.stoplossPrice = _params.stoplossPrice;
 
         emit UpdateStoplossPrice(
@@ -659,15 +685,17 @@ contract PositionStorage is IPositionStorage {
 
         TradePosition storage pos = positions[idx - 1];
 
-        IFactory _factory = IFactory(factory);
-        if (msg.sender != _factory.poolByQuoteToken(pos.quoteToken.id))
-            revert Forbidden(msg.sender);
+        if (
+            msg.sender !=
+            PoolAddress.computeAddress(poolDeployer, pos.quoteToken.id)
+        ) revert Forbidden(msg.sender);
 
         if (pos.status.isClosed)
             revert TradePositionClosedAlready(_params.positionKey);
 
         if (_params.updater != pos.owner)
             revert NotOwner(pos.owner, _params.updater);
+        IFactory _factory = IFactory(factory);
         IPriceFeed priceFeed = IPriceFeed(_factory.priceFeed());
         uint256 pricePrecision = priceFeed.PRECISION();
         uint256 baseTokenMUT = _factory.baseTokenMUT(pos.baseToken.id);
@@ -705,15 +733,17 @@ contract PositionStorage is IPositionStorage {
 
         TradePosition storage pos = positions[idx - 1];
 
-        IFactory _factory = IFactory(factory);
-        if (msg.sender != _factory.poolByQuoteToken(pos.quoteToken.id))
-            revert Forbidden(msg.sender);
+        if (
+            msg.sender !=
+            PoolAddress.computeAddress(poolDeployer, pos.quoteToken.id)
+        ) revert Forbidden(msg.sender);
 
         if (pos.status.isClosed)
             revert TradePositionClosedAlready(_params.positionKey);
 
         if (_params.updater != pos.owner)
             revert NotOwner(pos.owner, _params.updater);
+        IFactory _factory = IFactory(factory);
         IUserStorage userStorage = IUserStorage(_factory.userStorage());
         bool canUpdateDeadline = userStorage.canUpdateDeadline(_params.updater);
         if (!canUpdateDeadline) revert NotAllowed(_params.updater);

@@ -54,9 +54,7 @@ module.exports = {
   defaultNetwork: 'hardhat',
   networks: {
     hardhat: {
-      chainId: 280,
-      gasMultiplier: 0,
-      initialBaseFeePerGas: 0,
+      allowUnlimitedContractSize: false,
     },
 
     sepolia: {

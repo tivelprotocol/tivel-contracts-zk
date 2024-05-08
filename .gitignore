@@ -3,6 +3,8 @@ deprecated
 merged
 deploy
 deploy-utils
+cache-zk
+artifact-zk
 test
 typechain-types
 .DS_Store
