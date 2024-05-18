@@ -115,6 +115,42 @@ contract DEXAggregator is Lockable, IDEXAggregator {
         }
     }
 
+    function _getAmountIn(
+        address _dex,
+        address _tokenIn,
+        address _tokenOut,
+        uint256 _amountOut
+    ) internal view returns (uint256 amountIn, address dex) {
+        if (_tokenIn == _tokenOut) {
+            amountIn = _amountOut;
+            dex = _dex;
+        } else {
+            if (_dex == address(0)) {
+                uint256 length = dexes.length;
+                for (uint256 i = 0; i < length; i++) {
+                    {
+                        uint256 _amountIn = IDEXIntegration(dexes[i])
+                            .getAmountIn(_tokenIn, _tokenOut, _amountOut);
+                        if (
+                            amountIn == 0 ||
+                            (_amountIn > 0 && _amountIn < amountIn)
+                        ) {
+                            amountIn = _amountIn; // choose the better
+                            dex = dexes[i];
+                        }
+                    }
+                }
+            } else {
+                amountIn = IDEXIntegration(_dex).getAmountIn(
+                    _tokenIn,
+                    _tokenOut,
+                    _amountOut
+                );
+                dex = _dex;
+            }
+        }
+    }
+
     function validatePair(
         address _dex,
         address _tokenIn,
@@ -150,34 +186,7 @@ contract DEXAggregator is Lockable, IDEXAggregator {
         address _tokenOut,
         uint256 _amountOut
     ) external view override returns (uint256 amountIn, address dex) {
-        if (_tokenIn == _tokenOut) {
-            amountIn = _amountOut;
-            dex = _dex;
-        } else {
-            if (_dex == address(0)) {
-                uint256 length = dexes.length;
-                for (uint256 i = 0; i < length; i++) {
-                    {
-                        uint256 _amountIn = IDEXIntegration(dexes[i])
-                            .getAmountIn(_tokenIn, _tokenOut, _amountOut);
-                        if (
-                            amountIn == 0 ||
-                            (_amountIn > 0 && _amountIn < amountIn)
-                        ) {
-                            amountIn = _amountIn; // choose the better
-                            dex = dexes[i];
-                        }
-                    }
-                }
-            } else {
-                amountIn = IDEXIntegration(_dex).getAmountIn(
-                    _tokenIn,
-                    _tokenOut,
-                    _amountOut
-                );
-                dex = _dex;
-            }
-        }
+        return _getAmountIn(_dex, _tokenIn, _tokenOut, _amountOut);
     }
 
     function _swap(

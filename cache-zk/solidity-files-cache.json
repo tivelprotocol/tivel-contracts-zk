@@ -1,9 +1,9 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/DEXAggregator.sol": {
-      "lastModificationDate": 1715139122578,
-      "contentHash": "e8f596b495dc9f7eaf39482d0190b6fe",
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/DEXAggregator.sol": {
+      "lastModificationDate": 1715651821098,
+      "contentHash": "e6c7618839ed63c05b56b792e9564066",
       "sourceName": "contracts/DEXAggregator.sol",
       "solcConfig": {
         "version": "0.8.15",
@@ -56,56 +56,7 @@
         "DEXAggregator"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/IDEXAggregator.sol": {
-      "lastModificationDate": 1715139122786,
-      "contentHash": "6b782d5d6f0a229203b738472d935c04",
-      "sourceName": "contracts/interfaces/IDEXAggregator.sol",
-      "solcConfig": {
-        "version": "0.8.15",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "mode": "3"
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "libraries": {}
-        },
-        "zksolc": {
-          "version": "1.4.1",
-          "compilerSource": "binary",
-          "settings": {
-            "optimizer": {
-              "enabled": true,
-              "mode": "3"
-            },
-            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
-            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
-            "areLibrariesMissing": false,
-            "experimental": {},
-            "libraries": {}
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.8.4"
-      ],
-      "artifacts": [
-        "IDEXAggregator"
-      ]
-    },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/libraries/TransferHelper.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/libraries/TransferHelper.sol": {
       "lastModificationDate": 1715139122828,
       "contentHash": "07a7e6a0639298bc1d5b6bfcfb66283b",
       "sourceName": "contracts/libraries/TransferHelper.sol",
@@ -154,10 +105,10 @@
         "TransferHelper"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/IDEXIntegration.sol": {
-      "lastModificationDate": 1715139122749,
-      "contentHash": "117909e84e0c822492c01d577bcbd703",
-      "sourceName": "contracts/interfaces/IDEXIntegration.sol",
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/IDEXAggregator.sol": {
+      "lastModificationDate": 1715139122786,
+      "contentHash": "6b782d5d6f0a229203b738472d935c04",
+      "sourceName": "contracts/interfaces/IDEXAggregator.sol",
       "solcConfig": {
         "version": "0.8.15",
         "settings": {
@@ -200,59 +151,10 @@
         ">=0.8.4"
       ],
       "artifacts": [
-        "IDEXIntegration"
+        "IDEXAggregator"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/IERC20.sol": {
-      "lastModificationDate": 1715139122740,
-      "contentHash": "3ac5713f163a99f2d996fe3470056551",
-      "sourceName": "contracts/interfaces/IERC20.sol",
-      "solcConfig": {
-        "version": "0.8.15",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "mode": "3"
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "libraries": {}
-        },
-        "zksolc": {
-          "version": "1.4.1",
-          "compilerSource": "binary",
-          "settings": {
-            "optimizer": {
-              "enabled": true,
-              "mode": "3"
-            },
-            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
-            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
-            "areLibrariesMissing": false,
-            "experimental": {},
-            "libraries": {}
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.8.4"
-      ],
-      "artifacts": [
-        "IERC20"
-      ]
-    },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/base/Lockable.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/base/Lockable.sol": {
       "lastModificationDate": 1715139122570,
       "contentHash": "fdf228b42e9e5e41cee0c48356b18d12",
       "sourceName": "contracts/base/Lockable.sol",
@@ -301,7 +203,607 @@
         "Lockable"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/integrations/UniswapV3DEXIntegration.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/IDEXIntegration.sol": {
+      "lastModificationDate": 1715139122749,
+      "contentHash": "117909e84e0c822492c01d577bcbd703",
+      "sourceName": "contracts/interfaces/IDEXIntegration.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "IDEXIntegration"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/IERC20.sol": {
+      "lastModificationDate": 1715139122740,
+      "contentHash": "3ac5713f163a99f2d996fe3470056551",
+      "sourceName": "contracts/interfaces/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/integrations/UniswapV3PriceFeedIntegration.sol": {
+      "lastModificationDate": 1715139122611,
+      "contentHash": "a2fd14124ba7f602e15c7a36cb8a13b3",
+      "sourceName": "contracts/integrations/UniswapV3PriceFeedIntegration.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v3-core/contracts/interfaces/IUniswapV3Factory.sol",
+        "@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol",
+        "../interfaces/IPriceFeedIntegration.sol",
+        "../interfaces/IERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "UniswapV3PriceFeedIntegration"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/IPriceFeedIntegration.sol": {
+      "lastModificationDate": 1715139122765,
+      "contentHash": "901e5991138c20bab528e058048e7ba6",
+      "sourceName": "contracts/interfaces/IPriceFeedIntegration.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "IPriceFeedIntegration"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@uniswap/v3-core/contracts/interfaces/IUniswapV3Factory.sol": {
+      "lastModificationDate": 1710816128773,
+      "contentHash": "f0eeb76e5ae42bcbacc8efc10e091716",
+      "sourceName": "@uniswap/v3-core/contracts/interfaces/IUniswapV3Factory.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV3Factory"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol": {
+      "lastModificationDate": 1710816128773,
+      "contentHash": "e6badd8268772b99e7ca397aff11a965",
+      "sourceName": "@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [
+        "./pool/IUniswapV3PoolImmutables.sol",
+        "./pool/IUniswapV3PoolState.sol",
+        "./pool/IUniswapV3PoolDerivedState.sol",
+        "./pool/IUniswapV3PoolActions.sol",
+        "./pool/IUniswapV3PoolOwnerActions.sol",
+        "./pool/IUniswapV3PoolEvents.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV3Pool"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolDerivedState.sol": {
+      "lastModificationDate": 1710816128774,
+      "contentHash": "25b71180ec9f5132a158334971ee2ace",
+      "sourceName": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolDerivedState.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV3PoolDerivedState"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolActions.sol": {
+      "lastModificationDate": 1710816128774,
+      "contentHash": "83d338eb1394008c808a20ac7c5bab0c",
+      "sourceName": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolActions.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV3PoolActions"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolState.sol": {
+      "lastModificationDate": 1710816128774,
+      "contentHash": "0488495ef9087b4513d3b43634035ef9",
+      "sourceName": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolState.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV3PoolState"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolOwnerActions.sol": {
+      "lastModificationDate": 1710816128774,
+      "contentHash": "1b06ecc79e75f836c446ccf286e671e4",
+      "sourceName": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolOwnerActions.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV3PoolOwnerActions"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolImmutables.sol": {
+      "lastModificationDate": 1710816128774,
+      "contentHash": "e236e09a9d654fb2f20a6da5dba2bd2f",
+      "sourceName": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolImmutables.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV3PoolImmutables"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolEvents.sol": {
+      "lastModificationDate": 1710816128774,
+      "contentHash": "05abb59ec113db1046f7dadc78bb297b",
+      "sourceName": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolEvents.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV3PoolEvents"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/integrations/UniswapV3DEXIntegration.sol": {
       "lastModificationDate": 1715139122620,
       "contentHash": "7c170ad5bceec69c84849d5b90302445",
       "sourceName": "contracts/integrations/UniswapV3DEXIntegration.sol",
@@ -358,7 +860,7 @@
         "UniswapV3DEXIntegration"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/IUniswapV3StaticQuoter.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/IUniswapV3StaticQuoter.sol": {
       "lastModificationDate": 1715139122798,
       "contentHash": "2ed9fabfb343b8e33d5cf82ddfc29115",
       "sourceName": "contracts/interfaces/IUniswapV3StaticQuoter.sol",
@@ -407,56 +909,7 @@
         "IUniswapV3StaticQuoter"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@uniswap/v3-core/contracts/interfaces/IUniswapV3Factory.sol": {
-      "lastModificationDate": 1710816128773,
-      "contentHash": "f0eeb76e5ae42bcbacc8efc10e091716",
-      "sourceName": "@uniswap/v3-core/contracts/interfaces/IUniswapV3Factory.sol",
-      "solcConfig": {
-        "version": "0.8.15",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "mode": "3"
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "libraries": {}
-        },
-        "zksolc": {
-          "version": "1.4.1",
-          "compilerSource": "binary",
-          "settings": {
-            "optimizer": {
-              "enabled": true,
-              "mode": "3"
-            },
-            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
-            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
-            "areLibrariesMissing": false,
-            "experimental": {},
-            "libraries": {}
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.5.0"
-      ],
-      "artifacts": [
-        "IUniswapV3Factory"
-      ]
-    },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@uniswap/v3-periphery/contracts/interfaces/ISwapRouter.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@uniswap/v3-periphery/contracts/interfaces/ISwapRouter.sol": {
       "lastModificationDate": 1710816128756,
       "contentHash": "ffd42687b3db01d30c24213d961fcf9f",
       "sourceName": "@uniswap/v3-periphery/contracts/interfaces/ISwapRouter.sol",
@@ -507,7 +960,7 @@
         "ISwapRouter"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@uniswap/v3-core/contracts/interfaces/callback/IUniswapV3SwapCallback.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@uniswap/v3-core/contracts/interfaces/callback/IUniswapV3SwapCallback.sol": {
       "lastModificationDate": 1710816128774,
       "contentHash": "a8ba2d37b0107911ae0e3b0e123cbd83",
       "sourceName": "@uniswap/v3-core/contracts/interfaces/callback/IUniswapV3SwapCallback.sol",
@@ -556,10 +1009,10 @@
         "IUniswapV3SwapCallback"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/integrations/UniswapV3PriceFeedIntegration.sol": {
-      "lastModificationDate": 1715139122611,
-      "contentHash": "a2fd14124ba7f602e15c7a36cb8a13b3",
-      "sourceName": "contracts/integrations/UniswapV3PriceFeedIntegration.sol",
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/integrations/UniswapV2DEXIntegration.sol": {
+      "lastModificationDate": 1715651821096,
+      "contentHash": "bb5ad166919e22e292385ad8e169d234",
+      "sourceName": "contracts/integrations/UniswapV2DEXIntegration.sol",
       "solcConfig": {
         "version": "0.8.15",
         "settings": {
@@ -598,8 +1051,263 @@
         }
       },
       "imports": [
-        "@uniswap/v3-core/contracts/interfaces/IUniswapV3Factory.sol",
-        "@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol",
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol",
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
+        "@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router02.sol",
+        "../libraries/TransferHelper.sol",
+        "../interfaces/IERC20.sol",
+        "../interfaces/IDEXIntegration.sol",
+        "../base/Lockable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "UniswapV2DEXIntegration"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol": {
+      "lastModificationDate": 1715225745603,
+      "contentHash": "3fa31c3860f2b9585c3a98c64850829e",
+      "sourceName": "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV2Pair"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol": {
+      "lastModificationDate": 1715225745603,
+      "contentHash": "ec39b5372f4f4d52101b4da561e2aee6",
+      "sourceName": "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV2Factory"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router02.sol": {
+      "lastModificationDate": 1715225745603,
+      "contentHash": "3fd36426274a5b35f7e702f87ba08a8e",
+      "sourceName": "@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router02.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [
+        "./IUniswapV2Router01.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2"
+      ],
+      "artifacts": [
+        "IUniswapV2Router02"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router01.sol": {
+      "lastModificationDate": 1715225745603,
+      "contentHash": "95d8729b2c698dc663322167b3c085fe",
+      "sourceName": "@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router01.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2"
+      ],
+      "artifacts": [
+        "IUniswapV2Router01"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/integrations/UniswapV2PriceFeedIntegration.sol": {
+      "lastModificationDate": 1715226080452,
+      "contentHash": "d3ab64b29ee42fe847375e804a4b5de8",
+      "sourceName": "contracts/integrations/UniswapV2PriceFeedIntegration.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol",
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
         "../interfaces/IPriceFeedIntegration.sol",
         "../interfaces/IERC20.sol"
       ],
@@ -607,409 +1315,10 @@
         ">=0.8.4"
       ],
       "artifacts": [
-        "UniswapV3PriceFeedIntegration"
+        "UniswapV2PriceFeedIntegration"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/IPriceFeedIntegration.sol": {
-      "lastModificationDate": 1715139122765,
-      "contentHash": "901e5991138c20bab528e058048e7ba6",
-      "sourceName": "contracts/interfaces/IPriceFeedIntegration.sol",
-      "solcConfig": {
-        "version": "0.8.15",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "mode": "3"
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "libraries": {}
-        },
-        "zksolc": {
-          "version": "1.4.1",
-          "compilerSource": "binary",
-          "settings": {
-            "optimizer": {
-              "enabled": true,
-              "mode": "3"
-            },
-            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
-            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
-            "areLibrariesMissing": false,
-            "experimental": {},
-            "libraries": {}
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.8.4"
-      ],
-      "artifacts": [
-        "IPriceFeedIntegration"
-      ]
-    },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol": {
-      "lastModificationDate": 1710816128773,
-      "contentHash": "e6badd8268772b99e7ca397aff11a965",
-      "sourceName": "@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol",
-      "solcConfig": {
-        "version": "0.8.15",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "mode": "3"
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "libraries": {}
-        },
-        "zksolc": {
-          "version": "1.4.1",
-          "compilerSource": "binary",
-          "settings": {
-            "optimizer": {
-              "enabled": true,
-              "mode": "3"
-            },
-            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
-            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
-            "areLibrariesMissing": false,
-            "experimental": {},
-            "libraries": {}
-          }
-        }
-      },
-      "imports": [
-        "./pool/IUniswapV3PoolImmutables.sol",
-        "./pool/IUniswapV3PoolState.sol",
-        "./pool/IUniswapV3PoolDerivedState.sol",
-        "./pool/IUniswapV3PoolActions.sol",
-        "./pool/IUniswapV3PoolOwnerActions.sol",
-        "./pool/IUniswapV3PoolEvents.sol"
-      ],
-      "versionPragmas": [
-        ">=0.5.0"
-      ],
-      "artifacts": [
-        "IUniswapV3Pool"
-      ]
-    },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolOwnerActions.sol": {
-      "lastModificationDate": 1710816128774,
-      "contentHash": "1b06ecc79e75f836c446ccf286e671e4",
-      "sourceName": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolOwnerActions.sol",
-      "solcConfig": {
-        "version": "0.8.15",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "mode": "3"
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "libraries": {}
-        },
-        "zksolc": {
-          "version": "1.4.1",
-          "compilerSource": "binary",
-          "settings": {
-            "optimizer": {
-              "enabled": true,
-              "mode": "3"
-            },
-            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
-            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
-            "areLibrariesMissing": false,
-            "experimental": {},
-            "libraries": {}
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.5.0"
-      ],
-      "artifacts": [
-        "IUniswapV3PoolOwnerActions"
-      ]
-    },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolEvents.sol": {
-      "lastModificationDate": 1710816128774,
-      "contentHash": "05abb59ec113db1046f7dadc78bb297b",
-      "sourceName": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolEvents.sol",
-      "solcConfig": {
-        "version": "0.8.15",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "mode": "3"
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "libraries": {}
-        },
-        "zksolc": {
-          "version": "1.4.1",
-          "compilerSource": "binary",
-          "settings": {
-            "optimizer": {
-              "enabled": true,
-              "mode": "3"
-            },
-            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
-            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
-            "areLibrariesMissing": false,
-            "experimental": {},
-            "libraries": {}
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.5.0"
-      ],
-      "artifacts": [
-        "IUniswapV3PoolEvents"
-      ]
-    },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolImmutables.sol": {
-      "lastModificationDate": 1710816128774,
-      "contentHash": "e236e09a9d654fb2f20a6da5dba2bd2f",
-      "sourceName": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolImmutables.sol",
-      "solcConfig": {
-        "version": "0.8.15",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "mode": "3"
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "libraries": {}
-        },
-        "zksolc": {
-          "version": "1.4.1",
-          "compilerSource": "binary",
-          "settings": {
-            "optimizer": {
-              "enabled": true,
-              "mode": "3"
-            },
-            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
-            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
-            "areLibrariesMissing": false,
-            "experimental": {},
-            "libraries": {}
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.5.0"
-      ],
-      "artifacts": [
-        "IUniswapV3PoolImmutables"
-      ]
-    },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolDerivedState.sol": {
-      "lastModificationDate": 1710816128774,
-      "contentHash": "25b71180ec9f5132a158334971ee2ace",
-      "sourceName": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolDerivedState.sol",
-      "solcConfig": {
-        "version": "0.8.15",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "mode": "3"
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "libraries": {}
-        },
-        "zksolc": {
-          "version": "1.4.1",
-          "compilerSource": "binary",
-          "settings": {
-            "optimizer": {
-              "enabled": true,
-              "mode": "3"
-            },
-            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
-            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
-            "areLibrariesMissing": false,
-            "experimental": {},
-            "libraries": {}
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.5.0"
-      ],
-      "artifacts": [
-        "IUniswapV3PoolDerivedState"
-      ]
-    },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolState.sol": {
-      "lastModificationDate": 1710816128774,
-      "contentHash": "0488495ef9087b4513d3b43634035ef9",
-      "sourceName": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolState.sol",
-      "solcConfig": {
-        "version": "0.8.15",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "mode": "3"
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "libraries": {}
-        },
-        "zksolc": {
-          "version": "1.4.1",
-          "compilerSource": "binary",
-          "settings": {
-            "optimizer": {
-              "enabled": true,
-              "mode": "3"
-            },
-            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
-            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
-            "areLibrariesMissing": false,
-            "experimental": {},
-            "libraries": {}
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.5.0"
-      ],
-      "artifacts": [
-        "IUniswapV3PoolState"
-      ]
-    },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolActions.sol": {
-      "lastModificationDate": 1710816128774,
-      "contentHash": "83d338eb1394008c808a20ac7c5bab0c",
-      "sourceName": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolActions.sol",
-      "solcConfig": {
-        "version": "0.8.15",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "mode": "3"
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "libraries": {}
-        },
-        "zksolc": {
-          "version": "1.4.1",
-          "compilerSource": "binary",
-          "settings": {
-            "optimizer": {
-              "enabled": true,
-              "mode": "3"
-            },
-            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
-            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
-            "areLibrariesMissing": false,
-            "experimental": {},
-            "libraries": {}
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.5.0"
-      ],
-      "artifacts": [
-        "IUniswapV3PoolActions"
-      ]
-    },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/integrations/SyncswapStablePriceFeedIntegration.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/integrations/SyncswapStablePriceFeedIntegration.sol": {
       "lastModificationDate": 1715139122608,
       "contentHash": "96f7922f8469569606d542578f19227f",
       "sourceName": "contracts/integrations/SyncswapStablePriceFeedIntegration.sol",
@@ -1063,7 +1372,7 @@
         "SyncswapStablePriceFeedIntegration"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/external/ISyncswapFactory.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/external/ISyncswapFactory.sol": {
       "lastModificationDate": 1715139122794,
       "contentHash": "b52d962e1cdef76072e2b37624581711",
       "sourceName": "contracts/interfaces/external/ISyncswapFactory.sol",
@@ -1112,7 +1421,7 @@
         "ISyncswapFactory"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/external/ISyncswapPool.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/external/ISyncswapPool.sol": {
       "lastModificationDate": 1715139122795,
       "contentHash": "b0031b0c2cad1804df0bb79e3f539b97",
       "sourceName": "contracts/interfaces/external/ISyncswapPool.sol",
@@ -1161,7 +1470,7 @@
         "ISyncswapPool"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/integrations/SyncswapStableDEXIntegration.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/integrations/SyncswapStableDEXIntegration.sol": {
       "lastModificationDate": 1715139122620,
       "contentHash": "7d533d829839f2fff7aa1b9c9245bc52",
       "sourceName": "contracts/integrations/SyncswapStableDEXIntegration.sol",
@@ -1218,7 +1527,7 @@
         "SyncswapStableDEXIntegration"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/external/ISyncswapVault.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/external/ISyncswapVault.sol": {
       "lastModificationDate": 1715139122794,
       "contentHash": "2e4d7622e889888673975209ea037b34",
       "sourceName": "contracts/interfaces/external/ISyncswapVault.sol",
@@ -1267,7 +1576,7 @@
         "ISyncswapVault"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/integrations/SyncswapClassicDEXIntegration.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/integrations/SyncswapClassicDEXIntegration.sol": {
       "lastModificationDate": 1715139122619,
       "contentHash": "a5b143cfd81d67a143962c8d98abc7fa",
       "sourceName": "contracts/integrations/SyncswapClassicDEXIntegration.sol",
@@ -1324,7 +1633,7 @@
         "SyncswapClassicDEXIntegration"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/integrations/SyncswapClassicPriceFeedIntegration.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/integrations/SyncswapClassicPriceFeedIntegration.sol": {
       "lastModificationDate": 1715139122604,
       "contentHash": "c316e60909bc2a7c8b19ad601f752009",
       "sourceName": "contracts/integrations/SyncswapClassicPriceFeedIntegration.sol",
@@ -1378,109 +1687,7 @@
         "SyncswapClassicPriceFeedIntegration"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/integrations/MutePriceFeedIntegration.sol": {
-      "lastModificationDate": 1715139122610,
-      "contentHash": "3e70bfccc5c9e1eb8fb5612bab6dcb41",
-      "sourceName": "contracts/integrations/MutePriceFeedIntegration.sol",
-      "solcConfig": {
-        "version": "0.8.15",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "mode": "3"
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "libraries": {}
-        },
-        "zksolc": {
-          "version": "1.4.1",
-          "compilerSource": "binary",
-          "settings": {
-            "optimizer": {
-              "enabled": true,
-              "mode": "3"
-            },
-            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
-            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
-            "areLibrariesMissing": false,
-            "experimental": {},
-            "libraries": {}
-          }
-        }
-      },
-      "imports": [
-        "../interfaces/IPriceFeedIntegration.sol",
-        "../interfaces/IERC20.sol",
-        "../interfaces/external/IMuteRouter.sol"
-      ],
-      "versionPragmas": [
-        ">=0.8.4"
-      ],
-      "artifacts": [
-        "MutePriceFeedIntegration"
-      ]
-    },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/external/IMuteRouter.sol": {
-      "lastModificationDate": 1715139122796,
-      "contentHash": "f9eb3cc29321fe1436e56651460f336a",
-      "sourceName": "contracts/interfaces/external/IMuteRouter.sol",
-      "solcConfig": {
-        "version": "0.8.15",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "mode": "3"
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "libraries": {}
-        },
-        "zksolc": {
-          "version": "1.4.1",
-          "compilerSource": "binary",
-          "settings": {
-            "optimizer": {
-              "enabled": true,
-              "mode": "3"
-            },
-            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
-            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
-            "areLibrariesMissing": false,
-            "experimental": {},
-            "libraries": {}
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.8.4"
-      ],
-      "artifacts": [
-        "IMuteRouter"
-      ]
-    },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/integrations/MuteDEXIntegration.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/integrations/MuteDEXIntegration.sol": {
       "lastModificationDate": 1715139122606,
       "contentHash": "7826a850ffc428e859bd024889f63f9f",
       "sourceName": "contracts/integrations/MuteDEXIntegration.sol",
@@ -1535,7 +1742,109 @@
         "MuteDEXIntegration"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/test/FailedCallee.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/external/IMuteRouter.sol": {
+      "lastModificationDate": 1715139122796,
+      "contentHash": "f9eb3cc29321fe1436e56651460f336a",
+      "sourceName": "contracts/interfaces/external/IMuteRouter.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "IMuteRouter"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/integrations/MutePriceFeedIntegration.sol": {
+      "lastModificationDate": 1715139122610,
+      "contentHash": "3e70bfccc5c9e1eb8fb5612bab6dcb41",
+      "sourceName": "contracts/integrations/MutePriceFeedIntegration.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IPriceFeedIntegration.sol",
+        "../interfaces/IERC20.sol",
+        "../interfaces/external/IMuteRouter.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "MutePriceFeedIntegration"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/test/FailedCallee.sol": {
       "lastModificationDate": 1715139122886,
       "contentHash": "76bb49737bd4006a4296fab0bcbbc4e2",
       "sourceName": "contracts/test/FailedCallee.sol",
@@ -1588,7 +1897,7 @@
         "FailedCallee"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/IMintCallback.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/IMintCallback.sol": {
       "lastModificationDate": 1715139122758,
       "contentHash": "25689011febe2c146809a140f8b11f4a",
       "sourceName": "contracts/interfaces/IMintCallback.sol",
@@ -1637,7 +1946,7 @@
         "IMintCallback"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/IPool.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/IPool.sol": {
       "lastModificationDate": 1715139122785,
       "contentHash": "d6d0172554ab8d8a3309ada950ffe59a",
       "sourceName": "contracts/interfaces/IPool.sol",
@@ -1689,7 +1998,7 @@
         "IPool"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/IPositionStorage.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/IPositionStorage.sol": {
       "lastModificationDate": 1715139122797,
       "contentHash": "79549ff91842f12093d3ecad4837817d",
       "sourceName": "contracts/interfaces/IPositionStorage.sol",
@@ -1738,7 +2047,7 @@
         "IPositionStorage"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/IWithdrawalMonitor.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/IWithdrawalMonitor.sol": {
       "lastModificationDate": 1715139122793,
       "contentHash": "3be4fa229c4d239fc9ca2995e65b637c",
       "sourceName": "contracts/interfaces/IWithdrawalMonitor.sol",
@@ -1787,8 +2096,8 @@
         "IWithdrawalMonitor"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/test/Callee.sol": {
-      "lastModificationDate": 1715139122883,
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/test/Callee.sol": {
+      "lastModificationDate": 1715651821090,
       "contentHash": "94e2b7213898f7c43b55f88271f1fa0b",
       "sourceName": "contracts/test/Callee.sol",
       "solcConfig": {
@@ -1840,7 +2149,7 @@
         "Callee"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/INonfungiblePositionManager.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/INonfungiblePositionManager.sol": {
       "lastModificationDate": 1715139122787,
       "contentHash": "4644cabe2b125f30d022ec010bcf8f3b",
       "sourceName": "contracts/interfaces/INonfungiblePositionManager.sol",
@@ -1897,7 +2206,56 @@
         "INonfungiblePositionManager"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/IERC721Permit.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/IBurnCallback.sol": {
+      "lastModificationDate": 1715139122798,
+      "contentHash": "8ebc7c6c332fee8708a87f0873e0776f",
+      "sourceName": "contracts/interfaces/IBurnCallback.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "IBurnCallback"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/IERC721Permit.sol": {
       "lastModificationDate": 1715139122764,
       "contentHash": "954b9a087fa766bb292b2878145c482c",
       "sourceName": "contracts/interfaces/IERC721Permit.sol",
@@ -1948,7 +2306,7 @@
         "IERC721Permit"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/IPeripheryImmutableState.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/IPeripheryImmutableState.sol": {
       "lastModificationDate": 1715139122759,
       "contentHash": "885510c0eaf5b62560e8ad91341093cd",
       "sourceName": "contracts/interfaces/IPeripheryImmutableState.sol",
@@ -1997,7 +2355,7 @@
         "IPeripheryImmutableState"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/IPeripheryPayments.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/IPeripheryPayments.sol": {
       "lastModificationDate": 1715139122797,
       "contentHash": "7c26c751993f22885459465fed3a17e0",
       "sourceName": "contracts/interfaces/IPeripheryPayments.sol",
@@ -2046,107 +2404,7 @@
         "IPeripheryPayments"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/IBurnCallback.sol": {
-      "lastModificationDate": 1715139122798,
-      "contentHash": "8ebc7c6c332fee8708a87f0873e0776f",
-      "sourceName": "contracts/interfaces/IBurnCallback.sol",
-      "solcConfig": {
-        "version": "0.8.15",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "mode": "3"
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "libraries": {}
-        },
-        "zksolc": {
-          "version": "1.4.1",
-          "compilerSource": "binary",
-          "settings": {
-            "optimizer": {
-              "enabled": true,
-              "mode": "3"
-            },
-            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
-            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
-            "areLibrariesMissing": false,
-            "experimental": {},
-            "libraries": {}
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.8.4"
-      ],
-      "artifacts": [
-        "IBurnCallback"
-      ]
-    },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol": {
-      "lastModificationDate": 1710816174304,
-      "contentHash": "efbc0d15b80a74e34dbe8da0f3e879bb",
-      "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
-      "solcConfig": {
-        "version": "0.8.15",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "mode": "3"
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "libraries": {}
-        },
-        "zksolc": {
-          "version": "1.4.1",
-          "compilerSource": "binary",
-          "settings": {
-            "optimizer": {
-              "enabled": true,
-              "mode": "3"
-            },
-            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
-            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
-            "areLibrariesMissing": false,
-            "experimental": {},
-            "libraries": {}
-          }
-        }
-      },
-      "imports": [
-        "../IERC721.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "IERC721Metadata"
-      ]
-    },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol": {
       "lastModificationDate": 1710816174304,
       "contentHash": "f4dd06783f321aa26179bc2b6e361c29",
       "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol",
@@ -2197,7 +2455,58 @@
         "IERC721Enumerable"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol": {
+      "lastModificationDate": 1710816174304,
+      "contentHash": "efbc0d15b80a74e34dbe8da0f3e879bb",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [
+        "../IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Metadata"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol": {
       "lastModificationDate": 1710816174270,
       "contentHash": "48de4c9a3a4ae5ef66a2aa620843413f",
       "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
@@ -2248,7 +2557,7 @@
         "IERC721"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol": {
       "lastModificationDate": 1710816174291,
       "contentHash": "03e6768535ac4da0e9756f1d8a4a018a",
       "sourceName": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
@@ -2297,7 +2606,7 @@
         "IERC165"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/INonfungibleTokenPositionDescriptor.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/INonfungibleTokenPositionDescriptor.sol": {
       "lastModificationDate": 1715139122761,
       "contentHash": "b8155a6dec06d78fdb7de3777918f907",
       "sourceName": "contracts/interfaces/INonfungibleTokenPositionDescriptor.sol",
@@ -2348,7 +2657,7 @@
         "INonfungibleTokenPositionDescriptor"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/NonfungiblePositionManager.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/NonfungiblePositionManager.sol": {
       "lastModificationDate": 1715139122854,
       "contentHash": "a1424a29d82bbd58b7e6ac837e89cf2b",
       "sourceName": "contracts/NonfungiblePositionManager.sol",
@@ -2409,9 +2718,9 @@
         "NonfungiblePositionManager"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/libraries/PoolAddress.sol": {
-      "lastModificationDate": 1715139134467,
-      "contentHash": "2f2355294228acfe4a86984e13a7d4a7",
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/libraries/PoolAddress.sol": {
+      "lastModificationDate": 1715997681572,
+      "contentHash": "9b28b09036b38f611cd8098cdd23476c",
       "sourceName": "contracts/libraries/PoolAddress.sol",
       "solcConfig": {
         "version": "0.8.15",
@@ -2458,7 +2767,56 @@
         "PoolAddress"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/base/LiquidityManagement.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/IFactory.sol": {
+      "lastModificationDate": 1715139122768,
+      "contentHash": "d9d6c63d8fcf3a4277700f33e1869bed",
+      "sourceName": "contracts/interfaces/IFactory.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "IFactory"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/base/LiquidityManagement.sol": {
       "lastModificationDate": 1715139122558,
       "contentHash": "afb1859892a008c305cda84946b1f252",
       "sourceName": "contracts/base/LiquidityManagement.sol",
@@ -2513,7 +2871,7 @@
         "LiquidityManagement"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/base/PeripheryImmutableState.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/base/PeripheryImmutableState.sol": {
       "lastModificationDate": 1715139122560,
       "contentHash": "77c1a71549fccf4eae0863aa3c815d4d",
       "sourceName": "contracts/base/PeripheryImmutableState.sol",
@@ -2565,7 +2923,7 @@
         "PeripheryImmutableState"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/base/Multicall.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/base/Multicall.sol": {
       "lastModificationDate": 1715139122567,
       "contentHash": "00d031984a2847d662f335c48093a40e",
       "sourceName": "contracts/base/Multicall.sol",
@@ -2614,58 +2972,7 @@
         "Multicall"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/base/PeripheryValidation.sol": {
-      "lastModificationDate": 1715139122573,
-      "contentHash": "f8c1bc70653984deff010a46ec606130",
-      "sourceName": "contracts/base/PeripheryValidation.sol",
-      "solcConfig": {
-        "version": "0.8.15",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "mode": "3"
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "libraries": {}
-        },
-        "zksolc": {
-          "version": "1.4.1",
-          "compilerSource": "binary",
-          "settings": {
-            "optimizer": {
-              "enabled": true,
-              "mode": "3"
-            },
-            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
-            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
-            "areLibrariesMissing": false,
-            "experimental": {},
-            "libraries": {}
-          }
-        }
-      },
-      "imports": [
-        "./BlockTimestamp.sol"
-      ],
-      "versionPragmas": [
-        ">=0.8.4"
-      ],
-      "artifacts": [
-        "PeripheryValidation"
-      ]
-    },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/base/ERC721Permit.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/base/ERC721Permit.sol": {
       "lastModificationDate": 1715139122566,
       "contentHash": "1f9115091f3325c9893183850964e390",
       "sourceName": "contracts/base/ERC721Permit.sol",
@@ -2721,10 +3028,10 @@
         "ERC721Permit"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/IFactory.sol": {
-      "lastModificationDate": 1715139122768,
-      "contentHash": "d9d6c63d8fcf3a4277700f33e1869bed",
-      "sourceName": "contracts/interfaces/IFactory.sol",
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/base/PeripheryValidation.sol": {
+      "lastModificationDate": 1715139122573,
+      "contentHash": "f8c1bc70653984deff010a46ec606130",
+      "sourceName": "contracts/base/PeripheryValidation.sol",
       "solcConfig": {
         "version": "0.8.15",
         "settings": {
@@ -2762,15 +3069,17 @@
           }
         }
       },
-      "imports": [],
+      "imports": [
+        "./BlockTimestamp.sol"
+      ],
       "versionPragmas": [
         ">=0.8.4"
       ],
       "artifacts": [
-        "IFactory"
+        "PeripheryValidation"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/base/SelfPermit.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/base/SelfPermit.sol": {
       "lastModificationDate": 1715139122557,
       "contentHash": "229191c98fd283efbd2c2d7f96194966",
       "sourceName": "contracts/base/SelfPermit.sol",
@@ -2824,7 +3133,7 @@
         "SelfPermit"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/libraries/CallbackValidation.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/libraries/CallbackValidation.sol": {
       "lastModificationDate": 1715139122827,
       "contentHash": "737d2dcf18353aba38dfed65b8157863",
       "sourceName": "contracts/libraries/CallbackValidation.sol",
@@ -2876,7 +3185,7 @@
         "CallbackValidation"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/base/PeripheryPayments.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/base/PeripheryPayments.sol": {
       "lastModificationDate": 1715139122563,
       "contentHash": "9748b8aa190e3c46c9ba34df8597c898",
       "sourceName": "contracts/base/PeripheryPayments.sol",
@@ -2931,7 +3240,7 @@
         "PeripheryPayments"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/external/IWETH9.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/external/IWETH9.sol": {
       "lastModificationDate": 1715139122794,
       "contentHash": "b197e0f08151c2296e3663e55f03098b",
       "sourceName": "contracts/interfaces/external/IWETH9.sol",
@@ -2980,7 +3289,7 @@
         "IWETH9"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
       "lastModificationDate": 1710816174270,
       "contentHash": "df36f7051335cd1e748b1b6463b7fdd3",
       "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
@@ -3029,56 +3338,7 @@
         "IERC20"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/base/BlockTimestamp.sol": {
-      "lastModificationDate": 1715139122569,
-      "contentHash": "709ae568b4f5cb0968c177fd138d5c74",
-      "sourceName": "contracts/base/BlockTimestamp.sol",
-      "solcConfig": {
-        "version": "0.8.15",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "mode": "3"
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "libraries": {}
-        },
-        "zksolc": {
-          "version": "1.4.1",
-          "compilerSource": "binary",
-          "settings": {
-            "optimizer": {
-              "enabled": true,
-              "mode": "3"
-            },
-            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
-            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
-            "areLibrariesMissing": false,
-            "experimental": {},
-            "libraries": {}
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.8.4"
-      ],
-      "artifacts": [
-        "BlockTimestamp"
-      ]
-    },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/libraries/ChainId.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/libraries/ChainId.sol": {
       "lastModificationDate": 1715139122824,
       "contentHash": "19876caa8748c704183bed6076c3788e",
       "sourceName": "contracts/libraries/ChainId.sol",
@@ -3127,7 +3387,7 @@
         "ChainId"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/external/IERC1271.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/external/IERC1271.sol": {
       "lastModificationDate": 1715139122796,
       "contentHash": "8f30f5343c7ae8c4367582ff9e3ab3a9",
       "sourceName": "contracts/interfaces/external/IERC1271.sol",
@@ -3176,7 +3436,56 @@
         "IERC1271"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/base/BlockTimestamp.sol": {
+      "lastModificationDate": 1715139122569,
+      "contentHash": "709ae568b4f5cb0968c177fd138d5c74",
+      "sourceName": "contracts/base/BlockTimestamp.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "BlockTimestamp"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@openzeppelin/contracts/utils/Address.sol": {
       "lastModificationDate": 1710816174260,
       "contentHash": "211ffd288c1588ba8c10eae668ca3c66",
       "sourceName": "@openzeppelin/contracts/utils/Address.sol",
@@ -3225,7 +3534,7 @@
         "Address"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol": {
       "lastModificationDate": 1710816174304,
       "contentHash": "212e86880d210b6cac8c3eb0cd6b1fad",
       "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol",
@@ -3277,7 +3586,7 @@
         "ERC721Enumerable"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol": {
       "lastModificationDate": 1710816174270,
       "contentHash": "95602b04f0b53f1139f4668d123ddeb7",
       "sourceName": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
@@ -3334,7 +3643,7 @@
         "ERC721"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@openzeppelin/contracts/utils/Context.sol": {
       "lastModificationDate": 1710816174260,
       "contentHash": "f07feb4a44b1a4872370da5aa70e8e46",
       "sourceName": "@openzeppelin/contracts/utils/Context.sol",
@@ -3383,7 +3692,7 @@
         "Context"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
       "lastModificationDate": 1710816174260,
       "contentHash": "48686fc32a22a3754b8e63321857dd2a",
       "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
@@ -3435,7 +3744,7 @@
         "Strings"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@openzeppelin/contracts/utils/introspection/ERC165.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@openzeppelin/contracts/utils/introspection/ERC165.sol": {
       "lastModificationDate": 1710816174291,
       "contentHash": "0e7db055ce108f9da7bb6686a00287c0",
       "sourceName": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
@@ -3486,7 +3795,7 @@
         "ERC165"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol": {
       "lastModificationDate": 1710816174270,
       "contentHash": "c22d4395e33763de693fd440c6fd10e1",
       "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
@@ -3535,56 +3844,7 @@
         "IERC721Receiver"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@openzeppelin/contracts/utils/math/SignedMath.sol": {
-      "lastModificationDate": 1710816174292,
-      "contentHash": "9488ebd4daacfee8ad04811600d7d061",
-      "sourceName": "@openzeppelin/contracts/utils/math/SignedMath.sol",
-      "solcConfig": {
-        "version": "0.8.15",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "mode": "3"
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "libraries": {}
-        },
-        "zksolc": {
-          "version": "1.4.1",
-          "compilerSource": "binary",
-          "settings": {
-            "optimizer": {
-              "enabled": true,
-              "mode": "3"
-            },
-            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
-            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
-            "areLibrariesMissing": false,
-            "experimental": {},
-            "libraries": {}
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "SignedMath"
-      ]
-    },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@openzeppelin/contracts/utils/math/Math.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@openzeppelin/contracts/utils/math/Math.sol": {
       "lastModificationDate": 1710816174292,
       "contentHash": "fe63409d8a06818b926cf89e0ea88b1b",
       "sourceName": "@openzeppelin/contracts/utils/math/Math.sol",
@@ -3633,7 +3893,56 @@
         "Math"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/ISelfPermit.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@openzeppelin/contracts/utils/math/SignedMath.sol": {
+      "lastModificationDate": 1710816174292,
+      "contentHash": "9488ebd4daacfee8ad04811600d7d061",
+      "sourceName": "@openzeppelin/contracts/utils/math/SignedMath.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SignedMath"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/ISelfPermit.sol": {
       "lastModificationDate": 1715139122798,
       "contentHash": "caf31181c8b764bd125b9fc65d6f6d55",
       "sourceName": "contracts/interfaces/ISelfPermit.sol",
@@ -3682,7 +3991,7 @@
         "ISelfPermit"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/external/IERC20PermitAllowed.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/external/IERC20PermitAllowed.sol": {
       "lastModificationDate": 1715139122795,
       "contentHash": "00ff14e65500b77543de6e4203855895",
       "sourceName": "contracts/interfaces/external/IERC20PermitAllowed.sol",
@@ -3731,7 +4040,7 @@
         "IERC20PermitAllowed"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol": {
       "lastModificationDate": 1710816174305,
       "contentHash": "525fcdad8d171312933f47baf01d1ed8",
       "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol",
@@ -3780,7 +4089,7 @@
         "IERC20Permit"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
       "lastModificationDate": 1710816174304,
       "contentHash": "909ab67fc5c25033fe6cd364f8c056f9",
       "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
@@ -3831,7 +4140,7 @@
         "IERC20Metadata"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
       "lastModificationDate": 1710816174270,
       "contentHash": "3ae5166c6827a9cf1a7a462d1632b464",
       "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
@@ -3884,7 +4193,7 @@
         "ERC20"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/Router.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/Router.sol": {
       "lastModificationDate": 1715139122865,
       "contentHash": "5e784e6216223f8208857b34b1c9a1aa",
       "sourceName": "contracts/Router.sol",
@@ -3944,7 +4253,7 @@
         "Router"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/ICloseCallback.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/ICloseCallback.sol": {
       "lastModificationDate": 1715139122757,
       "contentHash": "5d367d9c08bc2c4f5c8208b5f39b0db0",
       "sourceName": "contracts/interfaces/ICloseCallback.sol",
@@ -3993,7 +4302,7 @@
         "ICloseCallback"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/IRouter.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/IRouter.sol": {
       "lastModificationDate": 1715139122787,
       "contentHash": "5fd3a218ac99de51000a3363c3d9e39c",
       "sourceName": "contracts/interfaces/IRouter.sol",
@@ -4044,8 +4353,8 @@
         "IRouter"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/PositionStorage.sol": {
-      "lastModificationDate": 1715223433113,
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/PositionStorage.sol": {
+      "lastModificationDate": 1715651821105,
       "contentHash": "b16a07de5124557e167942bc5d0f6cda",
       "sourceName": "contracts/PositionStorage.sol",
       "solcConfig": {
@@ -4100,7 +4409,7 @@
         "PositionStorage"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/IPriceFeed.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/IPriceFeed.sol": {
       "lastModificationDate": 1715139122786,
       "contentHash": "c2ff916d4562d59179006e76489f4532",
       "sourceName": "contracts/interfaces/IPriceFeed.sol",
@@ -4149,7 +4458,7 @@
         "IPriceFeed"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/IUserStorage.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/IUserStorage.sol": {
       "lastModificationDate": 1715139122763,
       "contentHash": "a90225cbfb871ab1690f17c402ccd51e",
       "sourceName": "contracts/interfaces/IUserStorage.sol",
@@ -4198,7 +4507,7 @@
         "IUserStorage"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/UserStorage.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/UserStorage.sol": {
       "lastModificationDate": 1715139122895,
       "contentHash": "bb4cf14a1ca0c960d46ab3cde601b9b6",
       "sourceName": "contracts/UserStorage.sol",
@@ -4249,7 +4558,7 @@
         "UserStorage"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/PriceFeed.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/PriceFeed.sol": {
       "lastModificationDate": 1715139122863,
       "contentHash": "2903dbf11f7b9f666be4a302ca2e070b",
       "sourceName": "contracts/PriceFeed.sol",
@@ -4302,7 +4611,7 @@
         "PriceFeed"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/base/PeripheryPaymentsWithFee.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/base/PeripheryPaymentsWithFee.sol": {
       "lastModificationDate": 1715139122562,
       "contentHash": "9759fa02a413c26b6d143e54431270e1",
       "sourceName": "contracts/base/PeripheryPaymentsWithFee.sol",
@@ -4358,7 +4667,7 @@
         "PeripheryPaymentsWithFee"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/libraries/LowGasSafeMath.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/libraries/LowGasSafeMath.sol": {
       "lastModificationDate": 1715139122821,
       "contentHash": "0848ea4b09dcbfe7832929328da68356",
       "sourceName": "contracts/libraries/LowGasSafeMath.sol",
@@ -4407,7 +4716,7 @@
         "LowGasSafeMath"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/IPeripheryPaymentsWithFee.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/IPeripheryPaymentsWithFee.sol": {
       "lastModificationDate": 1715139122753,
       "contentHash": "4b96b145b4083023cae76812844f7a1b",
       "sourceName": "contracts/interfaces/IPeripheryPaymentsWithFee.sol",
@@ -4458,7 +4767,7 @@
         "IPeripheryPaymentsWithFee"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/WithdrawalMonitor.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/WithdrawalMonitor.sol": {
       "lastModificationDate": 1715139122896,
       "contentHash": "97cefcce761b9515e3c7e73fc828a18a",
       "sourceName": "contracts/WithdrawalMonitor.sol",
@@ -4515,7 +4824,7 @@
         "WithdrawalMonitor"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@chainlink/contracts/src/v0.8/AutomationCompatible.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@chainlink/contracts/src/v0.8/AutomationCompatible.sol": {
       "lastModificationDate": 1710816110748,
       "contentHash": "c962c53a75d722542c83859d848edd5b",
       "sourceName": "@chainlink/contracts/src/v0.8/AutomationCompatible.sol",
@@ -4567,7 +4876,7 @@
         "AutomationCompatible"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@chainlink/contracts/src/v0.8/AutomationBase.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@chainlink/contracts/src/v0.8/AutomationBase.sol": {
       "lastModificationDate": 1710816110748,
       "contentHash": "80067f44d8bddd615599f8d73b9726a5",
       "sourceName": "@chainlink/contracts/src/v0.8/AutomationBase.sol",
@@ -4616,7 +4925,7 @@
         "AutomationBase"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@chainlink/contracts/src/v0.8/interfaces/AutomationCompatibleInterface.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@chainlink/contracts/src/v0.8/interfaces/AutomationCompatibleInterface.sol": {
       "lastModificationDate": 1710816110855,
       "contentHash": "c52969cee392918edbf23f914e01c0dc",
       "sourceName": "@chainlink/contracts/src/v0.8/interfaces/AutomationCompatibleInterface.sol",
@@ -4665,7 +4974,7 @@
         "AutomationCompatibleInterface"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/Monitor.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/Monitor.sol": {
       "lastModificationDate": 1715139122851,
       "contentHash": "54f39302a262b61b57de42a81614ab80",
       "sourceName": "contracts/Monitor.sol",
@@ -4722,7 +5031,7 @@
         "Monitor"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/Pool.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/Pool.sol": {
       "lastModificationDate": 1715139122856,
       "contentHash": "09efe3789ef53bfb9eb219881627c080",
       "sourceName": "contracts/Pool.sol",
@@ -4781,7 +5090,7 @@
         "Pool"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/PoolDeployer.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/PoolDeployer.sol": {
       "lastModificationDate": 1715139122858,
       "contentHash": "0d9193279ea60294a1bbbeb94573b409",
       "sourceName": "contracts/PoolDeployer.sol",
@@ -4833,7 +5142,7 @@
         "PoolDeployer"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/IPoolDeployer.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/IPoolDeployer.sol": {
       "lastModificationDate": 1715139122788,
       "contentHash": "2324d4b9d71cbdf6da178b5c467b1787",
       "sourceName": "contracts/interfaces/IPoolDeployer.sol",
@@ -4882,7 +5191,7 @@
         "IPoolDeployer"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/Factory.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/Factory.sol": {
       "lastModificationDate": 1715139122580,
       "contentHash": "a05c1693f17062ef05ac5f4207cc7eee",
       "sourceName": "contracts/Factory.sol",
@@ -4935,7 +5244,112 @@
         "Factory"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/LiquidationMarker.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/DEXAggregatorV2.sol": {
+      "lastModificationDate": 1715246942475,
+      "contentHash": "35bf5514466d1fc1845ff8cb7c7fd994",
+      "sourceName": "contracts/DEXAggregatorV2.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [
+        "./libraries/TransferHelper.sol",
+        "./interfaces/IDEXIntegration.sol",
+        "./interfaces/IDEXMiddleware.sol",
+        "./interfaces/IDEXAggregator.sol",
+        "./interfaces/IERC20.sol",
+        "./base/Lockable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "DEXAggregatorV2"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/IDEXMiddleware.sol": {
+      "lastModificationDate": 1715245543122,
+      "contentHash": "ec3e92a6e1077e3697c3f6640924570a",
+      "sourceName": "contracts/interfaces/IDEXMiddleware.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "IDEXMiddleware"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/LiquidationMarker.sol": {
       "lastModificationDate": 1715139122538,
       "contentHash": "fcbf5abac78c4b342042e5a504c7b60f",
       "sourceName": "contracts/LiquidationMarker.sol",
@@ -4987,7 +5401,7 @@
         "LiquidationMarker"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/TradePositionReader.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/TradePositionReader.sol": {
       "lastModificationDate": 1715139122893,
       "contentHash": "4318596078a925517806ee500b0047d5",
       "sourceName": "contracts/TradePositionReader.sol",
@@ -5040,7 +5454,7 @@
         "TradePositionReader"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/PoolReader.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/PoolReader.sol": {
       "lastModificationDate": 1715139122860,
       "contentHash": "55f32e6da5bdd93af05487e2f4ff2dd0",
       "sourceName": "contracts/PoolReader.sol",
@@ -5093,7 +5507,7 @@
         "PoolReader"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
       "lastModificationDate": 1710816174260,
       "contentHash": "5a20b2cad87ddb61c7a3a6af21289e28",
       "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
@@ -5144,7 +5558,7 @@
         "Ownable"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/test/MockERC20.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/test/MockERC20.sol": {
       "lastModificationDate": 1715139122884,
       "contentHash": "7f41742ecde1c9268925f255824d5aa5",
       "sourceName": "contracts/test/MockERC20.sol",
@@ -5196,7 +5610,7 @@
         "MockERC20"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/integrations/GMXPriceFeedIntegration.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/integrations/GMXPriceFeedIntegration.sol": {
       "lastModificationDate": 1715139122604,
       "contentHash": "0335eae3a3bc4f0f2aaf141e8f60bcf0",
       "sourceName": "contracts/integrations/GMXPriceFeedIntegration.sol",
@@ -5248,7 +5662,7 @@
         "GMXPriceFeedIntegration"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/IGMXPriceFeed.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/IGMXPriceFeed.sol": {
       "lastModificationDate": 1715139122786,
       "contentHash": "16e4539e112056e53c2d68540221d445",
       "sourceName": "contracts/interfaces/IGMXPriceFeed.sol",
@@ -5297,7 +5711,7 @@
         "IGMXPriceFeed"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/integrations/ChainlinkPriceFeedIntegration.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/integrations/ChainlinkPriceFeedIntegration.sol": {
       "lastModificationDate": 1715139122605,
       "contentHash": "02bbf7a26cb6057463c317f99354d1eb",
       "sourceName": "contracts/integrations/ChainlinkPriceFeedIntegration.sol",
@@ -5349,7 +5763,7 @@
         "ChainlinkPriceFeedIntegration"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/IChainlinkPriceFeed.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/IChainlinkPriceFeed.sol": {
       "lastModificationDate": 1715139122741,
       "contentHash": "188dd171066016b6d12e6b33968b40ed",
       "sourceName": "contracts/interfaces/IChainlinkPriceFeed.sol",
@@ -5398,7 +5812,7 @@
         "IChainlinkPriceFeed"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/TokenReader.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/TokenReader.sol": {
       "lastModificationDate": 1715139122892,
       "contentHash": "b7b6cdfa9378e8656c2a4cb589be5d43",
       "sourceName": "contracts/TokenReader.sol",
@@ -5449,7 +5863,7 @@
         "TokenReader"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/base/BancorConverterRegistry.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/base/BancorConverterRegistry.sol": {
       "lastModificationDate": 1715139122556,
       "contentHash": "425182363f7f86e33496489edb2fca6a",
       "sourceName": "contracts/base/BancorConverterRegistry.sol",
@@ -5501,56 +5915,7 @@
         "BancorConverterRegistry"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/base/Utils.sol": {
-      "lastModificationDate": 1715139122572,
-      "contentHash": "0ecf58905a555b25fd17c64173cb56a3",
-      "sourceName": "contracts/base/Utils.sol",
-      "solcConfig": {
-        "version": "0.8.15",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "mode": "3"
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "libraries": {}
-        },
-        "zksolc": {
-          "version": "1.4.1",
-          "compilerSource": "binary",
-          "settings": {
-            "optimizer": {
-              "enabled": true,
-              "mode": "3"
-            },
-            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
-            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
-            "areLibrariesMissing": false,
-            "experimental": {},
-            "libraries": {}
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.8.4"
-      ],
-      "artifacts": [
-        "Utils"
-      ]
-    },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/base/Owned.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/base/Owned.sol": {
       "lastModificationDate": 1715139122559,
       "contentHash": "42a2d5b340a3556f92080c253cd8d33f",
       "sourceName": "contracts/base/Owned.sol",
@@ -5599,7 +5964,101 @@
         "Owned"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/interfaces/IMulticall.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/base/Utils.sol": {
+      "lastModificationDate": 1715139122572,
+      "contentHash": "0ecf58905a555b25fd17c64173cb56a3",
+      "sourceName": "contracts/base/Utils.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "Utils"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/base/Paymaster.sol": {
+      "lastModificationDate": 1715327326829,
+      "contentHash": "d41d8cd98f00b204e9800998ecf8427e",
+      "sourceName": "contracts/base/Paymaster.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [],
+      "artifacts": []
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/IMulticall.sol": {
       "lastModificationDate": 1715139122746,
       "contentHash": "c41fefc1732c0b235eb880299c8d8861",
       "sourceName": "contracts/interfaces/IMulticall.sol",
@@ -5648,7 +6107,7 @@
         "IMulticall"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/libraries/Math.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/libraries/Math.sol": {
       "lastModificationDate": 1715139122825,
       "contentHash": "504c0188c460c32d4ee5c82d50cb88a1",
       "sourceName": "contracts/libraries/Math.sol",
@@ -5697,7 +6156,7 @@
         "Math"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/test/USDT.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/test/USDT.sol": {
       "lastModificationDate": 1715139122885,
       "contentHash": "2eebc83f57a8028b720f50c6dc86703f",
       "sourceName": "contracts/test/USDT.sol",
@@ -5751,7 +6210,7 @@
         "USDT"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/test/WBTC.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/test/WBTC.sol": {
       "lastModificationDate": 1715139122881,
       "contentHash": "11da28ff50e4332470d57f820bb86ac6",
       "sourceName": "contracts/test/WBTC.sol",
@@ -5805,7 +6264,7 @@
         "WBTC"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/test/WETH.sol": {
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/test/WETH.sol": {
       "lastModificationDate": 1715139122887,
       "contentHash": "5a608e9b74428d0cc6014661b30782af",
       "sourceName": "contracts/test/WETH.sol",
@@ -5852,315 +6311,6 @@
       ],
       "artifacts": [
         "WETH"
-      ]
-    },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/integrations/UniswapV2DEXIntegration.sol": {
-      "lastModificationDate": 1715225887007,
-      "contentHash": "bb5ad166919e22e292385ad8e169d234",
-      "sourceName": "contracts/integrations/UniswapV2DEXIntegration.sol",
-      "solcConfig": {
-        "version": "0.8.15",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "mode": "3"
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "libraries": {}
-        },
-        "zksolc": {
-          "version": "1.4.1",
-          "compilerSource": "binary",
-          "settings": {
-            "optimizer": {
-              "enabled": true,
-              "mode": "3"
-            },
-            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
-            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
-            "areLibrariesMissing": false,
-            "experimental": {},
-            "libraries": {}
-          }
-        }
-      },
-      "imports": [
-        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol",
-        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
-        "@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router02.sol",
-        "../libraries/TransferHelper.sol",
-        "../interfaces/IERC20.sol",
-        "../interfaces/IDEXIntegration.sol",
-        "../base/Lockable.sol"
-      ],
-      "versionPragmas": [
-        ">=0.8.4"
-      ],
-      "artifacts": [
-        "UniswapV2DEXIntegration"
-      ]
-    },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router02.sol": {
-      "lastModificationDate": 1715225745603,
-      "contentHash": "3fd36426274a5b35f7e702f87ba08a8e",
-      "sourceName": "@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router02.sol",
-      "solcConfig": {
-        "version": "0.8.15",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "mode": "3"
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "libraries": {}
-        },
-        "zksolc": {
-          "version": "1.4.1",
-          "compilerSource": "binary",
-          "settings": {
-            "optimizer": {
-              "enabled": true,
-              "mode": "3"
-            },
-            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
-            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
-            "areLibrariesMissing": false,
-            "experimental": {},
-            "libraries": {}
-          }
-        }
-      },
-      "imports": [
-        "./IUniswapV2Router01.sol"
-      ],
-      "versionPragmas": [
-        ">=0.6.2"
-      ],
-      "artifacts": [
-        "IUniswapV2Router02"
-      ]
-    },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol": {
-      "lastModificationDate": 1715225745603,
-      "contentHash": "ec39b5372f4f4d52101b4da561e2aee6",
-      "sourceName": "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol",
-      "solcConfig": {
-        "version": "0.8.15",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "mode": "3"
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "libraries": {}
-        },
-        "zksolc": {
-          "version": "1.4.1",
-          "compilerSource": "binary",
-          "settings": {
-            "optimizer": {
-              "enabled": true,
-              "mode": "3"
-            },
-            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
-            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
-            "areLibrariesMissing": false,
-            "experimental": {},
-            "libraries": {}
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.5.0"
-      ],
-      "artifacts": [
-        "IUniswapV2Factory"
-      ]
-    },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol": {
-      "lastModificationDate": 1715225745603,
-      "contentHash": "3fa31c3860f2b9585c3a98c64850829e",
-      "sourceName": "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
-      "solcConfig": {
-        "version": "0.8.15",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "mode": "3"
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "libraries": {}
-        },
-        "zksolc": {
-          "version": "1.4.1",
-          "compilerSource": "binary",
-          "settings": {
-            "optimizer": {
-              "enabled": true,
-              "mode": "3"
-            },
-            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
-            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
-            "areLibrariesMissing": false,
-            "experimental": {},
-            "libraries": {}
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.5.0"
-      ],
-      "artifacts": [
-        "IUniswapV2Pair"
-      ]
-    },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/node_modules/@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router01.sol": {
-      "lastModificationDate": 1715225745603,
-      "contentHash": "95d8729b2c698dc663322167b3c085fe",
-      "sourceName": "@uniswap/v2-periphery/contracts/interfaces/IUniswapV2Router01.sol",
-      "solcConfig": {
-        "version": "0.8.15",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "mode": "3"
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "libraries": {}
-        },
-        "zksolc": {
-          "version": "1.4.1",
-          "compilerSource": "binary",
-          "settings": {
-            "optimizer": {
-              "enabled": true,
-              "mode": "3"
-            },
-            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
-            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
-            "areLibrariesMissing": false,
-            "experimental": {},
-            "libraries": {}
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.6.2"
-      ],
-      "artifacts": [
-        "IUniswapV2Router01"
-      ]
-    },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts/contracts/integrations/UniswapV2PriceFeedIntegration.sol": {
-      "lastModificationDate": 1715226080452,
-      "contentHash": "d3ab64b29ee42fe847375e804a4b5de8",
-      "sourceName": "contracts/integrations/UniswapV2PriceFeedIntegration.sol",
-      "solcConfig": {
-        "version": "0.8.15",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "mode": "3"
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "libraries": {}
-        },
-        "zksolc": {
-          "version": "1.4.1",
-          "compilerSource": "binary",
-          "settings": {
-            "optimizer": {
-              "enabled": true,
-              "mode": "3"
-            },
-            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
-            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
-            "areLibrariesMissing": false,
-            "experimental": {},
-            "libraries": {}
-          }
-        }
-      },
-      "imports": [
-        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol",
-        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
-        "../interfaces/IPriceFeedIntegration.sol",
-        "../interfaces/IERC20.sol"
-      ],
-      "versionPragmas": [
-        ">=0.8.4"
-      ],
-      "artifacts": [
-        "UniswapV2PriceFeedIntegration"
       ]
     }
   }
