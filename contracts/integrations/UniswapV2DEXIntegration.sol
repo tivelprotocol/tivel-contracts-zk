@@ -52,7 +52,7 @@ contract UniswapV2DEXIntegration is IDEXIntegration, Lockable {
         uint256 _amountIn
     ) internal view returns (uint256 amountOut) {
         address pair = IUniswapV2Factory(factory).getPair(_tokenIn, _tokenOut);
-        if (pair != address(0)) {
+        if (pair == address(0)) {
             return 0;
         }
 
@@ -81,7 +81,7 @@ contract UniswapV2DEXIntegration is IDEXIntegration, Lockable {
         uint256 _amountOut
     ) internal view returns (uint256 amountIn) {
         address pair = IUniswapV2Factory(factory).getPair(_tokenIn, _tokenOut);
-        if (pair != address(0)) {
+        if (pair == address(0)) {
             return 0;
         }
 
