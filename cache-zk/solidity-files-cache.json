@@ -5974,58 +5974,6 @@
         "MockERC20"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/integrations/GMXPriceFeedIntegration.sol": {
-      "lastModificationDate": 1715139122604,
-      "contentHash": "0335eae3a3bc4f0f2aaf141e8f60bcf0",
-      "sourceName": "contracts/integrations/GMXPriceFeedIntegration.sol",
-      "solcConfig": {
-        "version": "0.8.15",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "mode": "3"
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "libraries": {}
-        },
-        "zksolc": {
-          "version": "1.4.1",
-          "compilerSource": "binary",
-          "settings": {
-            "optimizer": {
-              "enabled": true,
-              "mode": "3"
-            },
-            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
-            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
-            "areLibrariesMissing": false,
-            "experimental": {},
-            "libraries": {}
-          }
-        }
-      },
-      "imports": [
-        "../interfaces/IPriceFeedIntegration.sol",
-        "../interfaces/IGMXPriceFeed.sol"
-      ],
-      "versionPragmas": [
-        ">=0.8.4"
-      ],
-      "artifacts": [
-        "GMXPriceFeedIntegration"
-      ]
-    },
     "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/IGMXPriceFeed.sol": {
       "lastModificationDate": 1715139122786,
       "contentHash": "16e4539e112056e53c2d68540221d445",
@@ -6630,6 +6578,168 @@
       ],
       "artifacts": [
         "WETH"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/integrations/SyncswapClassicPriceFeedIntegrationV2.sol": {
+      "lastModificationDate": 1717643000257,
+      "contentHash": "5aac40e05e4f226b18e686e95a66b8ec",
+      "sourceName": "contracts/integrations/SyncswapClassicPriceFeedIntegrationV2.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IPriceFeedIntegration.sol",
+        "../interfaces/IERC20.sol",
+        "../interfaces/external/ISyncswapFactory.sol",
+        "../interfaces/external/ISyncswapPool.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "SyncswapClassicPriceFeedIntegrationV2"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/integrations/UniswapV2PriceFeedIntegrationV2.sol": {
+      "lastModificationDate": 1717644317373,
+      "contentHash": "e5946cc6a5c9bc9598ea458b8e22e97c",
+      "sourceName": "contracts/integrations/UniswapV2PriceFeedIntegrationV2.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Factory.sol",
+        "@uniswap/v2-core/contracts/interfaces/IUniswapV2Pair.sol",
+        "../interfaces/IPriceFeedIntegration.sol",
+        "../interfaces/IERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "UniswapV2PriceFeedIntegrationV2"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/integrations/KoiV2PriceFeedIntegrationV2.sol": {
+      "lastModificationDate": 1717643436830,
+      "contentHash": "8487c17beeffb308d0564e54828f1469",
+      "sourceName": "contracts/integrations/KoiV2PriceFeedIntegrationV2.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.4.1",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.4.1",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IPriceFeedIntegration.sol",
+        "../interfaces/IERC20.sol",
+        "../interfaces/external/IKoiV2Factory.sol",
+        "../interfaces/external/IKoiV2Pair.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "KoiV2PriceFeedIntegrationV2"
       ]
     }
   }
