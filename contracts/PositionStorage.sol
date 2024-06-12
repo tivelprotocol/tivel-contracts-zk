@@ -633,9 +633,11 @@ contract PositionStorage is IPositionStorage {
             uint256 collateralLT = _factory.collateralLT(pos.collateral.id);
             uint256 collateralLiqValue = ((pos.quoteToken.amount - mutb) *
                 collateralLT) / collateralMUT;
-            pos.collateral.liqPrice =
+            collateralLiqPrice =
                 (collateralLiqValue * pricePrecision) /
                 newCollateralAmount;
+            pos.collateral.amount = newCollateralAmount;
+            pos.collateral.liqPrice = collateralLiqPrice;
         }
 
         emit UpdateCollateralAmount(

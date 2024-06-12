@@ -4661,66 +4661,6 @@
         "ERC20"
       ]
     },
-    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/Router.sol": {
-      "lastModificationDate": 1718122860841,
-      "contentHash": "70385141e4731b5a7777ba8b73befbcf",
-      "sourceName": "contracts/Router.sol",
-      "solcConfig": {
-        "version": "0.8.15",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "mode": "3"
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "libraries": {}
-        },
-        "zksolc": {
-          "version": "1.5.0",
-          "compilerSource": "binary",
-          "settings": {
-            "optimizer": {
-              "enabled": true,
-              "mode": "3"
-            },
-            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.5.0",
-            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
-            "areLibrariesMissing": false,
-            "experimental": {},
-            "libraries": {}
-          }
-        }
-      },
-      "imports": [
-        "./libraries/TransferHelper.sol",
-        "./libraries/PoolAddress.sol",
-        "./interfaces/external/IWETH9.sol",
-        "./interfaces/ICloseCallback.sol",
-        "./interfaces/IDEXAggregator.sol",
-        "./interfaces/IERC20.sol",
-        "./interfaces/IFactory.sol",
-        "./interfaces/IPool.sol",
-        "./interfaces/IRouter.sol",
-        "./base/PeripheryValidation.sol"
-      ],
-      "versionPragmas": [
-        ">=0.8.4"
-      ],
-      "artifacts": [
-        "Router"
-      ]
-    },
     "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/ICloseCallback.sol": {
       "lastModificationDate": 1717102143078,
       "contentHash": "5d367d9c08bc2c4f5c8208b5f39b0db0",
@@ -4771,8 +4711,8 @@
       ]
     },
     "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/IRouter.sol": {
-      "lastModificationDate": 1717575468525,
-      "contentHash": "b457a2bf8e7847135ea78cdf5701bf24",
+      "lastModificationDate": 1718179372478,
+      "contentHash": "7321d7451e28738092f85ff0925fe3d3",
       "sourceName": "contracts/interfaces/IRouter.sol",
       "solcConfig": {
         "version": "0.8.15",
@@ -5185,8 +5125,8 @@
       ]
     },
     "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/Monitor.sol": {
-      "lastModificationDate": 1718159506883,
-      "contentHash": "6f2d0a0b4806c5942f6c278ccebe8cbf",
+      "lastModificationDate": 1718180737579,
+      "contentHash": "3a3505812fde61a0403ec1492e0cfd46",
       "sourceName": "contracts/Monitor.sol",
       "solcConfig": {
         "version": "0.8.15",
@@ -5231,6 +5171,7 @@
         "./interfaces/ICloseCallback.sol",
         "./interfaces/IFactory.sol",
         "./interfaces/IDEXAggregator.sol",
+        "./interfaces/IMetaAggregator.sol",
         "./interfaces/IERC20.sol",
         "./interfaces/IPool.sol"
       ],
@@ -5563,8 +5504,8 @@
       ]
     },
     "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/PositionStorage.sol": {
-      "lastModificationDate": 1718122845311,
-      "contentHash": "2d80b7726fc9a79498add9436035f422",
+      "lastModificationDate": 1718160723513,
+      "contentHash": "c2c96d9c02680da0d33951a642a8c0bd",
       "sourceName": "contracts/PositionStorage.sol",
       "solcConfig": {
         "version": "0.8.15",
@@ -6743,6 +6684,170 @@
       ],
       "artifacts": [
         "KoiV2PriceFeedIntegrationV2"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/interfaces/IMetaAggregator.sol": {
+      "lastModificationDate": 1718179302510,
+      "contentHash": "a16eee40747ccc512d01f0d4dc0f1521",
+      "sourceName": "contracts/interfaces/IMetaAggregator.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.5.0",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.5.0",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "IMetaAggregator"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/MetaAggregator.sol": {
+      "lastModificationDate": 1718179217303,
+      "contentHash": "9e41313ebff67608fb1519a4f491c41e",
+      "sourceName": "contracts/MetaAggregator.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.5.0",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.5.0",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [
+        "./base/Lockable.sol",
+        "./libraries/TransferHelper.sol",
+        "./interfaces/IERC20.sol",
+        "./interfaces/IMetaAggregator.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "MetaAggregator"
+      ]
+    },
+    "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/Router.sol": {
+      "lastModificationDate": 1718180727145,
+      "contentHash": "186e0a582094894e685e73408e2635ea",
+      "sourceName": "contracts/Router.sol",
+      "solcConfig": {
+        "version": "0.8.15",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "3"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "libraries": {}
+        },
+        "zksolc": {
+          "version": "1.5.0",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "3"
+            },
+            "compilerPath": "/Users/phunh.2510/Library/Caches/hardhat-nodejs/compilers-v2/zksolc/zksolc-v1.5.0",
+            "missingLibrariesPath": "./.zksolc-libraries-cache/missingLibraryDependencies.json",
+            "areLibrariesMissing": false,
+            "experimental": {},
+            "libraries": {}
+          }
+        }
+      },
+      "imports": [
+        "./libraries/TransferHelper.sol",
+        "./libraries/PoolAddress.sol",
+        "./interfaces/external/IWETH9.sol",
+        "./interfaces/ICloseCallback.sol",
+        "./interfaces/IDEXAggregator.sol",
+        "./interfaces/IERC20.sol",
+        "./interfaces/IFactory.sol",
+        "./interfaces/IPool.sol",
+        "./interfaces/IMetaAggregator.sol",
+        "./interfaces/IRouter.sol",
+        "./base/PeripheryValidation.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.4"
+      ],
+      "artifacts": [
+        "Router"
       ]
     }
   }
