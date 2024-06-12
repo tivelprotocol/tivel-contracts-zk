@@ -32,6 +32,7 @@ contract Router is IRouter, ICloseCallback, PeripheryValidation {
     event SetMetaAggregator(address manager);
 
     constructor(address _factory, address _WETH) {
+        manager = msg.sender;
         factory = _factory;
         WETH = _WETH;
         poolDeployer = IFactory(_factory).poolDeployer();
