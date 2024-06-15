@@ -584,7 +584,7 @@ contract PositionStorage is IPositionStorage {
             pos.quoteToken.id
         );
 
-        if (_params.takeProfitPrice <= basePrice)
+        if (_params.takeProfitPrice > 0 && _params.takeProfitPrice <= basePrice)
             revert BadTakeProfitPrice(basePrice, _params.takeProfitPrice);
         if (_params.stoplossPrice >= basePrice)
             revert BadStoplossPrice(basePrice, _params.stoplossPrice);
