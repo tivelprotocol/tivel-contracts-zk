@@ -5125,8 +5125,8 @@
       ]
     },
     "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/Monitor.sol": {
-      "lastModificationDate": 1718180737579,
-      "contentHash": "3a3505812fde61a0403ec1492e0cfd46",
+      "lastModificationDate": 1718597476350,
+      "contentHash": "0f9f4cb7cf5b5e4db5ad30900f89eac6",
       "sourceName": "contracts/Monitor.sol",
       "solcConfig": {
         "version": "0.8.15",
@@ -5452,8 +5452,8 @@
       ]
     },
     "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/LiquidationMarker.sol": {
-      "lastModificationDate": 1717575298400,
-      "contentHash": "010602d7a2418a35bc28b4e04f1854b0",
+      "lastModificationDate": 1718597491638,
+      "contentHash": "84ab4d3b655502497f23b29c6905c89b",
       "sourceName": "contracts/LiquidationMarker.sol",
       "solcConfig": {
         "version": "0.8.15",
