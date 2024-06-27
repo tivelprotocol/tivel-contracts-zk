@@ -5125,8 +5125,8 @@
       ]
     },
     "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/Monitor.sol": {
-      "lastModificationDate": 1718597476350,
-      "contentHash": "0f9f4cb7cf5b5e4db5ad30900f89eac6",
+      "lastModificationDate": 1718683170577,
+      "contentHash": "a42053315ca6455e11980faf1f7df58e",
       "sourceName": "contracts/Monitor.sol",
       "solcConfig": {
         "version": "0.8.15",
@@ -6368,8 +6368,8 @@
       ]
     },
     "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/integrations/SyncswapClassicPriceFeedIntegrationV2.sol": {
-      "lastModificationDate": 1717643000257,
-      "contentHash": "5aac40e05e4f226b18e686e95a66b8ec",
+      "lastModificationDate": 1719158851271,
+      "contentHash": "9c2dcd81f98c1a2e213efc0cdd5583f6",
       "sourceName": "contracts/integrations/SyncswapClassicPriceFeedIntegrationV2.sol",
       "solcConfig": {
         "version": "0.8.15",
@@ -6422,8 +6422,8 @@
       ]
     },
     "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/integrations/UniswapV2PriceFeedIntegrationV2.sol": {
-      "lastModificationDate": 1717644317373,
-      "contentHash": "e5946cc6a5c9bc9598ea458b8e22e97c",
+      "lastModificationDate": 1719158873670,
+      "contentHash": "78701d30c9c1abfe3cc62de2141517a2",
       "sourceName": "contracts/integrations/UniswapV2PriceFeedIntegrationV2.sol",
       "solcConfig": {
         "version": "0.8.15",
@@ -6476,8 +6476,8 @@
       ]
     },
     "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/integrations/KoiV2PriceFeedIntegrationV2.sol": {
-      "lastModificationDate": 1717643436830,
-      "contentHash": "8487c17beeffb308d0564e54828f1469",
+      "lastModificationDate": 1719158860642,
+      "contentHash": "a2f9f21b2dbc7e184ae0035f6048bf45",
       "sourceName": "contracts/integrations/KoiV2PriceFeedIntegrationV2.sol",
       "solcConfig": {
         "version": "0.8.15",
@@ -6579,8 +6579,8 @@
       ]
     },
     "/Users/phunh.2510/Documents/digital-maxtech/zksync/tivel/tivel-contracts-zk/contracts/MetaAggregator.sol": {
-      "lastModificationDate": 1718182232290,
-      "contentHash": "a7484561fd69991f1f2dffe5f6f957fe",
+      "lastModificationDate": 1719215452429,
+      "contentHash": "b45d6460862ecb3d0b63de4d721ee9b3",
       "sourceName": "contracts/MetaAggregator.sol",
       "solcConfig": {
         "version": "0.8.15",
