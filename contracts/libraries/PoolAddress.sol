@@ -4,7 +4,7 @@ pragma solidity >=0.8.4;
 /// @title Provides functions for deriving a pool address from the pool deployer, tokens
 library PoolAddress {
     bytes32 internal constant POOL_INIT_CODE_HASH =
-        0x01000cdd7ea36e28649d5e961cc0f5f171e4c0d170bc19551e4e2d60e52bbe19;
+        0x01000d01d50e79b82cead1ca6c5dcd0dd5be24aaaa4b632f582f999b8ab18e7b;
     bytes32 internal constant CREATE2_PREFIX = keccak256("zksyncCreate2");
     bytes32 internal constant EMPTY_CONSTRUCTOR_INPUT = keccak256("");
 

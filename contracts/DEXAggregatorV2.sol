@@ -112,13 +112,21 @@ contract DEXAggregatorV2 is Lockable, IDEXAggregator {
             if (_dex == address(0)) {
                 uint256 length = dexes.length;
                 for (uint256 i = 0; i < length; i++) {
-                    {
-                        uint256 _amountOut = IDEXIntegration(dexes[i])
-                            .getAmountOut(_tokenIn, _tokenOut, _amountIn);
-                        if (_amountOut > amountOut) {
-                            amountOut = _amountOut; // choose the better
-                            dex = dexes[i];
-                        }
+                    uint256 _amountOut;
+                    try
+                        IDEXIntegration(dexes[i]).getAmountOut(
+                            _tokenIn,
+                            _tokenOut,
+                            _amountIn
+                        )
+                    returns (uint256 t) {
+                        _amountOut = t;
+                    } catch (bytes memory /*lowLevelData*/) {
+                        _amountOut = 0;
+                    }
+                    if (_amountOut > amountOut) {
+                        amountOut = _amountOut; // choose the better
+                        dex = dexes[i];
                     }
                 }
             } else {
@@ -145,16 +153,23 @@ contract DEXAggregatorV2 is Lockable, IDEXAggregator {
             if (_dex == address(0)) {
                 uint256 length = dexes.length;
                 for (uint256 i = 0; i < length; i++) {
-                    {
-                        uint256 _amountIn = IDEXIntegration(dexes[i])
-                            .getAmountIn(_tokenIn, _tokenOut, _amountOut);
-                        if (
-                            amountIn == 0 ||
-                            (_amountIn > 0 && _amountIn < amountIn)
-                        ) {
-                            amountIn = _amountIn; // choose the better
-                            dex = dexes[i];
-                        }
+                    uint256 _amountIn;
+                    try
+                        IDEXIntegration(dexes[i]).getAmountIn(
+                            _tokenIn,
+                            _tokenOut,
+                            _amountOut
+                        )
+                    returns (uint256 t) {
+                        _amountIn = t;
+                    } catch (bytes memory /*lowLevelData*/) {
+                        _amountIn = 0;
+                    }
+                    if (
+                        amountIn == 0 || (_amountIn > 0 && _amountIn < amountIn)
+                    ) {
+                        amountIn = _amountIn; // choose the better
+                        dex = dexes[i];
                     }
                 }
             } else {
